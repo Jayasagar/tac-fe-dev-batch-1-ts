@@ -1,2 +1,2 @@
 #### Typescript learning
-i am clone now
+I was cloned now
