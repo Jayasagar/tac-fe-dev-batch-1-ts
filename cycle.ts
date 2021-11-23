@@ -31,6 +31,7 @@ console.log('Here are the Bicycle details', Bicycle);
 interface CustomArray {
     [index: number]: string
 }
+
   var CustomArray = ['Bicycle1', 'Bicycle2', 'Bicycle3']
 console.log('customer choosen', CustomArray[0])
 console.log(Bicycle1);
