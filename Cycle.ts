@@ -126,7 +126,11 @@ class Cycle1 {
  //Plan 2
  const plan2 = new Subcription(2, 2);
  plan.add(plan2);
- console.log("term: " + plan.term + " | price: " + plan.cost); 
+console.log("term: " + plan.term + " | price: " + plan.cost); 
 const order = new Order();
 order.addItem(gear);
+ console.log("term: " + plan.term + " | price: " + plan.cost);
+ 
 
+const order = new Order();
+order.addItem(gear);
