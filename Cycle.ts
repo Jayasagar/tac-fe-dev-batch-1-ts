@@ -46,7 +46,6 @@ class Order {
         });
     }
 }
->>>>>>> 050a14b1e697eee84fb84397fb76fe6dd5879b72
 var date1: Date = new Date("11/24/2021");
 var date2: Date = new Date();
 function calculateHours(date2, date1){
@@ -75,7 +74,6 @@ tubeLess.print();
 const gear = new Cycle();
 gear.setData(5, [gearCycle]);
 gear.print();
-<<<<<<< HEAD
 
 class Cycle1 {
     name: string;
@@ -133,7 +131,6 @@ class Cycle1 {
  plan.add(plan2);
  console.log("term: " + plan.term + " | price: " + plan.cost);
  
-=======
+
 const order = new Order();
 order.addItem(gear);
->>>>>>> 050a14b1e697eee84fb84397fb76fe6dd5879b72
