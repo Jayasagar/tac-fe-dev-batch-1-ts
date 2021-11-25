@@ -26,6 +26,7 @@ class Model{
         console.log("Model Name:", this.name, "Rent Per Hour:", this.rentPhour);
     }
 }
+
 var date1: Date = new Date("11/24/2021");
 var date2: Date = new Date();
 function calculateHours(date2, date1){
@@ -51,3 +52,60 @@ tubeLess.print();
 const gear = new Cycle();
 gear.setData(5, [gearCycle]);
 gear.print();
+
+class Cycle1 {
+    name: string;
+    cost: number;
+    spe: string;
+ 
+    constructor(name: string, cost: number, spe: string) {
+       this.name = name;
+       this.cost = cost;
+       this.spe = spe;
+    }
+    print() {
+       console.log("Name of cycle:", this.name);
+       console.log("Sub price per month  of the cycle:", this.cost);
+       console.log("Specifications of cycle:", this.spe);
+    }
+ }
+ 
+ class Subcription extends Cycle1 {
+    term: number;
+ 
+    constructor(term: number, cost: number) {
+       super("abc", 200, "lightingColor");
+       this.term = term;
+       this.cost = cost;
+    }
+   
+ 
+    add(value: Subcription): void {
+       this.term *= value.term;
+       this.cost *= value.cost;
+   }
+ 
+   displayData(): void {
+      console.log("No of months:", this.term);
+      console.log("Price per month:", this.cost);
+ 
+   }
+ }
+ 
+ const model1 = new Cycle1("Hero Pro Cycle,", 299, "Weight less");
+ model1.print();
+ 
+ console.log("YOUR SUBCRIPTION IS FOR:");
+ // 2 months term and price for 1 month
+ var sub = new Subcription(2, 299);
+ sub.displayData();
+ 
+ //plan1
+ const plan = new Subcription(1, 299);
+ console.log("term: " + plan.term + " | price: " + plan.cost);
+ 
+ //Plan 2
+ const plan2 = new Subcription(2, 2);
+ plan.add(plan2);
+ console.log("term: " + plan.term + " | price: " + plan.cost);
+ 
