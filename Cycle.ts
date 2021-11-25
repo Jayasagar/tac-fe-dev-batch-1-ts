@@ -26,7 +26,27 @@ class Model{
         console.log("Model Name:", this.name, "Rent Per Hour:", this.rentPhour);
     }
 }
+<<<<<<< HEAD
 
+=======
+class Order {
+    items: Cycle[];
+    constructor() {
+        this.items = [];
+    }
+    addItem(item: Cycle) {
+        this.items.push(item);
+    }
+    print() {
+        console.log("Available Models");
+        this.items.forEach(cycle => {
+            console.log("---------------------Start-----------------------");
+            cycle.print();
+            console.log("-----------------------END------------------------");
+        });
+    }
+}
+>>>>>>> 050a14b1e697eee84fb84397fb76fe6dd5879b72
 var date1: Date = new Date("11/24/2021");
 var date2: Date = new Date();
 function calculateHours(date2, date1){
@@ -34,6 +54,8 @@ function calculateHours(date2, date1){
     let rent: number = 0;
     hoursCount = Math.round(date2.getTime - date1);
     return hoursCount / (1000 * 60 * 60);
+    function calculateTotalRent() {
+    let rent: number = 0;
     if(this.getModels == gearCycle) {
     let rent = hoursCount * gear.rentPhour;
     } else if (this.getModels == weightLess) {
@@ -41,6 +63,7 @@ function calculateHours(date2, date1){
     } else {
         rent = hoursCount * tubeLess.rentPhour;
     }
+}
     console.log("Total Rent:", rent);
 }
 const gearCycle = new Model("gearCycle", 5);
@@ -52,6 +75,7 @@ tubeLess.print();
 const gear = new Cycle();
 gear.setData(5, [gearCycle]);
 gear.print();
+<<<<<<< HEAD
 
 class Cycle1 {
     name: string;
@@ -109,3 +133,7 @@ class Cycle1 {
  plan.add(plan2);
  console.log("term: " + plan.term + " | price: " + plan.cost);
  
+=======
+const order = new Order();
+order.addItem(gear);
+>>>>>>> 050a14b1e697eee84fb84397fb76fe6dd5879b72
