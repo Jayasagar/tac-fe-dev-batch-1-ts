@@ -1,14 +1,11 @@
 class Cycle{
-    name: string;
     rentPhour: number;
     models: Model[];
-    setData(cname:string, crentPhour: number, cmodels: Model[]):void{
-        this.name = cname;
+    setData(crentPhour: number, cmodels: Model[]):void{
         this.rentPhour = crentPhour;
         this.models = cmodels;
     }
     print() {
-        console.log("Cycle Name:", this.name);
         console.log("Rent Per Hour:", this.rentPhour);
         this.models.forEach(model => {
             model.print();
@@ -19,15 +16,31 @@ class Cycle{
     }
 }
 class Model{
-    name1: string;
-    rentPhour1: number;
-    constructor(name1: string, rentPhour1: number){
-        this.name1 = name1;
-        this.rentPhour1 = rentPhour1;
+    name: string;
+    rentPhour: number;
+    constructor(name: string, rentPhour: number){
+        this.name = name;
+        this.rentPhour = rentPhour;
     }
     print() {
-        console.log("Model Name:", this.name1, "Rent Per Hour:", this.rentPhour1);
+        console.log("Model Name:", this.name, "Rent Per Hour:", this.rentPhour);
     }
+}
+var date1: Date = new Date("11/24/2021");
+var date2: Date = new Date();
+function calculateHours(date2, date1){
+    let hoursCount: number = 0;
+    let rent: number = 0;
+    hoursCount = Math.round(date2.getTime - date1);
+    return hoursCount / (1000 * 60 * 60);
+    if(this.getModels == gearCycle) {
+    let rent = hoursCount * gear.rentPhour;
+    } else if (this.getModels == weightLess) {
+        rent = hoursCount * weightLess.rentPhour;
+    } else {
+        rent = hoursCount * tubeLess.rentPhour;
+    }
+    console.log("Total Rent:", rent);
 }
 const gearCycle = new Model("gearCycle", 5);
 gearCycle.print();
@@ -36,5 +49,5 @@ weightLess.print();
 const tubeLess = new Model("tubeLess", 3);
 tubeLess.print();
 const gear = new Cycle();
-gear.setData("Hero", 5, [gearCycle]);
+gear.setData(5, [gearCycle]);
 gear.print();
