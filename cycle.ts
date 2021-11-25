@@ -35,6 +35,7 @@ interface CustomArray {
   var CustomArray = ['Bicycle1', 'Bicycle2', 'Bicycle3']
 console.log('customer choosen', CustomArray[0])
 console.log(Bicycle1);
+
 //CAlculation of subcription for no of months
 class subscription1 {
     public Sub(SubPM: number, NoofM: number): number {
