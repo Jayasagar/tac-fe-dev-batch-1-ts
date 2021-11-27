@@ -13,6 +13,9 @@ class Cycle {
             model.print();
         });
     }
+    addModel() {
+        this.models.push(model); 
+    } 
 }
 class Model {
     rentPerHour: number;
