@@ -13,9 +13,9 @@ class Cycle {
             model.print();
         });
     }
-    addModel() {
+    addModel(model: Model) {
         this.models.push(model); 
-    } 
+    }
 }
 class Model {
     rentPerHour: number;
@@ -45,5 +45,5 @@ atlasCycle.addModel(weightLess);
 atlasCycle.print();
 var herculesCycle = new Cycle();
 herculesCycle.setData("Hercules", 3, [tubeLess]);
-herculesCycle.addModel([tubeLess]);
+herculesCycle.addModel(tubeLess);
 herculesCycle.print();
