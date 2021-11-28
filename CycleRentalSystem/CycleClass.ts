@@ -17,24 +17,6 @@ class Cycle {
         this.models.push(model); 
     }
 }
-class Model {
-    rentPerHour: number;
-    constructor(rentPerHour: number) {
-        this.rentPerHour = rentPerHour;
-    }
-    print() {
-        console.log("Rent Per Hours:", this.rentPerHour);
-    }
-
-}
-class Order {
-    
-}
-const gearCycle = new Model(5);
-//gearCycle.print();
-const weightLess = new Model(3);
-//weighLess.print(); 
-const tubeLess = new Model(3);
 var heroCycle = new Cycle();
 heroCycle.setData("Hero", 5, [gearCycle]);
 heroCycle.addModel(gearCycle);
