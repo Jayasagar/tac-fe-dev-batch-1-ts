@@ -2,7 +2,7 @@ import {Model} from './ModelClass'
 class Subcription extends Model {
     plan: String;
     amountPerplan: Number;
-    constructor (plan: String, amountperPplan: Number) {
+    constructor (plan: String, amountPerplan: Number) {
         super(3);
         this.plan = plan;
         this.amountPerplan = amountPerplan;
