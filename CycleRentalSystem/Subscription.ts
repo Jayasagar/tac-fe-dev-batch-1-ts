@@ -8,7 +8,7 @@ class Subcription extends Model {
         this.amountPerplan = amountPerplan;
     }
     print() {
-        console.log("Subcsription for.", this.plan, "Rs.", this.amountPerplan);
+        console.log("Subcsription for:", this.plan, "Rs.", this.amountPerplan);
     }
 }
 
