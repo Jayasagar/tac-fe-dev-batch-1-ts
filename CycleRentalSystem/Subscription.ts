@@ -20,7 +20,7 @@ plan1.print();
 var plan2 = new Subscription('monthly', 300);
 plan2.print();
 
-var plan3 = new Subcription('quaterly', 1000);
+var plan3 = new Subscription('quaterly', 1000);
 plan3.print();   
 
 const h = new Model('Hero Gear Cycle');
