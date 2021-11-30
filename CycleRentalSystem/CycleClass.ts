@@ -13,19 +13,29 @@ class Cycle {
             model.print();
         });
     }
+    finalRent() {
+        let rentPerHour = this.rentPerHour;
+        this.models.forEach(model => {
+            rentPerHour = rentPerHour + model.rentPerHour;
+        })
+        return rentPerHour; 
+    }
     addModel(model: Model) {
         this.models.push(model); 
     }
 }
-var heroCycle = new Cycle();
-heroCycle.setData("Hero", 5, [gearCycle]);
+const heroCycle = new Cycle();
+heroCycle.setData("Hero", 5, [gearCycle]);"
 heroCycle.addModel(gearCycle);
 heroCycle.print();
-var atlasCycle = new Cycle();
+
+const atlasCycle = new Cycle();
 atlasCycle.setData("Atlas", 6, [weightLess]);
 atlasCycle.addModel(weightLess);
 atlasCycle.print();
-var herculesCycle = new Cycle();
+
+const herculesCycle = new Cycle();
 herculesCycle.setData("Hercules", 3, [tubeLess]);
 herculesCycle.addModel(tubeLess);
 herculesCycle.print();
+
