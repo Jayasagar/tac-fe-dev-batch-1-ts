@@ -36,6 +36,6 @@ atlasCycle.addModel(weightLess);
 atlasCycle.print();
 
 const herculesCycle = new Cycle();
-herculesCycle.setData("Hercules", 3, [tubeLess]);
+herculesCycle.setData("Hercules", 4, [tubeLess]);
 herculesCycle.addModel(tubeLess);
 herculesCycle.print();
