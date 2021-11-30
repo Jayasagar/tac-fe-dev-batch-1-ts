@@ -39,4 +39,3 @@ const herculesCycle = new Cycle();
 herculesCycle.setData("Hercules", 3, [tubeLess]);
 herculesCycle.addModel(tubeLess);
 herculesCycle.print();
-

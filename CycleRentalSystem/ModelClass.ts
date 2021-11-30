@@ -1,15 +1,11 @@
-class Model {
-    rentPerHour: number;
-    constructor(rentPerHour: number) {
-        this.rentPerHour = rentPerHour;
+export class Model {
+    model: String;
+    constructor (model: String) {
+        this.model = model;
     }
     print() {
-        console.log("Rent Per Hours:", this.rentPerHour);
+        console.log("model name:", this.model);
     }
-
 }
-const gearCycle = new Model(5);
-//gearCycle.print();
-const weightLess = new Model(3);
-//weighLess.print(); 
-const tubeLess = new Model(3);
+const gearCycle = new Model('gearCycle');
+gearCycle.print();
