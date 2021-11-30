@@ -24,8 +24,9 @@ class Cycle {
         this.models.push(model); 
     }
 }
+
 const heroCycle = new Cycle();
-heroCycle.setData("Hero", 5, [gearCycle]);"
+heroCycle.setData("Hero", 5, [gearCycle]);
 heroCycle.addModel(gearCycle);
 heroCycle.print();
 
