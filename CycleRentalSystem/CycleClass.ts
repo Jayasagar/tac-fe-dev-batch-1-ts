@@ -18,7 +18,7 @@ class Cycle {
         this.models.forEach(model => {
             rentPerHour = rentPerHour + model.rentPerHour;
         })
-        return rentPerHour; 
+        return rentPerHour;
     }
     addModel(model: Model) {
         this.models.push(model); 
