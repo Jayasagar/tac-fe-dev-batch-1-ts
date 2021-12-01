@@ -1,7 +1,7 @@
 export class Model {
     name: string;
-    rentPerHour: number;
-    constructor(name: string, rentPerHour: number) {
+    rentPerHour?: number;
+    constructor(name: string, rentPerHour?: number) {
         this.name = name;
         this.rentPerHour = rentPerHour;
     }
@@ -14,4 +14,4 @@ const gearCycle = new Model("gearCycle", 5);
 const weightLess = new Model("weightLess", 6);
 //weighLess.print();
 const tubeLess = new Model("tubeLess", 3);
-//tubeLess.print();
+tubeLess.print();
