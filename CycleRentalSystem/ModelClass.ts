@@ -1,7 +1,7 @@
 export class Model {
     name: string;
-    rentPerHour?: number;
-    constructor(name: string, rentPerHour?: number) {
+    rentPerHour: number;
+    constructor(name: string, rentPerHour: number) {
         this.name = name;
         this.rentPerHour = rentPerHour;
     }
