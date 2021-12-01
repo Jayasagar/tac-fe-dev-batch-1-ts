@@ -1,5 +1,5 @@
 import {Model} from './ModelClass'
-class Subscription extends Model {
+class Subscription {
     plan: String;
     amountPerplan: Number;
     constructor (plan: String, amountPerplan: Number) {
